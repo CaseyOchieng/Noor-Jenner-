@@ -1,11 +1,13 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:noorjenner/common/widgets/button/basic_app_button.dart';
 import 'package:noorjenner/core/configs/asset/app_images.dart';
 import 'package:noorjenner/core/configs/asset/app_vectors.dart';
 import 'package:noorjenner/core/configs/theme/app_colors.dart';
+import 'package:noorjenner/presentation/choose_mode/bloc/theme_cubit.dart';
 
 class ChooseMode extends StatelessWidget {
   const ChooseMode({super.key});
@@ -71,6 +73,7 @@ class ChooseMode extends StatelessWidget {
                             filter:
                                 ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
                             child: GestureDetector(
+                              onTap: () {},
                               child: Container(
                                 height: 60,
                                 width: 60,
@@ -91,7 +94,7 @@ class ChooseMode extends StatelessWidget {
                         ),
                         //Text in the icon
                         Text(
-                          'Day Mode',
+                          'Light Mode',
                           style: TextStyle(
                             color: AppColors.grey,
                             fontSize: 13,
@@ -111,6 +114,11 @@ class ChooseMode extends StatelessWidget {
                             filter:
                                 ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
                             child: GestureDetector(
+                              onTap: () {
+                                context
+                                    .read<ThemeCubit>()
+                                    .updateTheme(ThemeMode.dark);
+                              },
                               child: Container(
                                 height: 60,
                                 width: 60,
@@ -131,7 +139,7 @@ class ChooseMode extends StatelessWidget {
                         ),
                         //Text
                         Text(
-                          'Night Mode',
+                          'Dark Mode',
                           style: TextStyle(
                             color: AppColors.grey,
                             fontSize: 13,

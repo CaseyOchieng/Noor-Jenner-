@@ -7,6 +7,7 @@ import 'package:noorjenner/common/widgets/button/basic_app_button.dart';
 import 'package:noorjenner/core/configs/asset/app_images.dart';
 import 'package:noorjenner/core/configs/asset/app_vectors.dart';
 import 'package:noorjenner/core/configs/theme/app_colors.dart';
+import 'package:noorjenner/presentation/auth/pages/signup_or_signin.dart';
 import 'package:noorjenner/presentation/choose_mode/bloc/theme_cubit.dart';
 
 class ChooseMode extends StatelessWidget {
@@ -163,7 +164,7 @@ class ChooseMode extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const ChooseMode(),
+                        builder: (context) => const SignupOrSignin(),
                       ),
                     );
                   },

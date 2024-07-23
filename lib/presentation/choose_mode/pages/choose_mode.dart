@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:noorjenner/common/widgets/button/basic_app_button.dart';
 import 'package:noorjenner/core/configs/asset/app_images.dart';
 import 'package:noorjenner/core/configs/asset/app_vectors.dart';
+import 'package:noorjenner/core/configs/theme/app_colors.dart';
 
 class ChooseMode extends StatelessWidget {
   const ChooseMode({super.key});
@@ -52,7 +53,7 @@ class ChooseMode extends StatelessWidget {
                   'Choose  Mode',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 18,
+                    fontSize: 14,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -63,43 +64,77 @@ class ChooseMode extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     // ignore: sized_box_for_whitespace
-                    ClipOval(
-                      child: BackdropFilter(
-                        filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
-                        child: Container(
-                          height: 60,
-                          width: 60,
-                          decoration: BoxDecoration(
-                            color: Color(0xff30393C).withOpacity(0.5),
-                            shape: BoxShape.circle,
-                          ),
-                          child: SvgPicture.asset(
-                            AppVectors.sun,
-                            fit: BoxFit.none,
+                    Column(
+                      children: [
+                        ClipOval(
+                          child: BackdropFilter(
+                            filter:
+                                ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+                            child: Container(
+                              height: 60,
+                              width: 60,
+                              decoration: BoxDecoration(
+                                color: Color(0xff30393C).withOpacity(0.5),
+                                shape: BoxShape.circle,
+                              ),
+                              child: SvgPicture.asset(
+                                AppVectors.sun,
+                                fit: BoxFit.none,
+                              ),
+                            ),
                           ),
                         ),
-                      ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        //Text in the icon
+                        Text(
+                          'Day Mode',
+                          style: TextStyle(
+                            color: AppColors.grey,
+                            fontSize: 13,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        )
+                      ],
                     ),
                     SizedBox(
                       width: 20,
                     ),
                     // ignore: sized_box_for_whitespace
-                    ClipOval(
-                      child: BackdropFilter(
-                        filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
-                        child: Container(
-                          height: 60,
-                          width: 60,
-                          decoration: BoxDecoration(
-                            color: Color(0xff30393C).withOpacity(0.5),
-                            shape: BoxShape.circle,
-                          ),
-                          child: SvgPicture.asset(
-                            AppVectors.moon,
-                            fit: BoxFit.none,
+                    Column(
+                      children: [
+                        ClipOval(
+                          child: BackdropFilter(
+                            filter:
+                                ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+                            child: Container(
+                              height: 60,
+                              width: 60,
+                              decoration: BoxDecoration(
+                                color: Color(0xff30393C).withOpacity(0.5),
+                                shape: BoxShape.circle,
+                              ),
+                              child: SvgPicture.asset(
+                                AppVectors.moon,
+                                fit: BoxFit.none,
+                              ),
+                            ),
                           ),
                         ),
-                      ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        //Text
+                        Text(
+                          'Night Mode',
+                          style: TextStyle(
+                            color: AppColors.grey,
+                            fontSize: 13,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        )
+                      ],
                     ),
                   ],
                 ),
@@ -116,7 +151,7 @@ class ChooseMode extends StatelessWidget {
                       ),
                     );
                   },
-                  title: 'Get Started',
+                  title: 'Continue',
                   height: null,
                 ),
               ],

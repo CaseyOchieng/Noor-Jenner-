@@ -73,7 +73,11 @@ class ChooseMode extends StatelessWidget {
                             filter:
                                 ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
                             child: GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                context
+                                    .read<ThemeCubit>()
+                                    .updateTheme(ThemeMode.light);
+                              },
                               child: Container(
                                 height: 60,
                                 width: 60,

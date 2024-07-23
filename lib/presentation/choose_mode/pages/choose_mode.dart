@@ -70,16 +70,18 @@ class ChooseMode extends StatelessWidget {
                           child: BackdropFilter(
                             filter:
                                 ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
-                            child: Container(
-                              height: 60,
-                              width: 60,
-                              decoration: BoxDecoration(
-                                color: Color(0xff30393C).withOpacity(0.5),
-                                shape: BoxShape.circle,
-                              ),
-                              child: SvgPicture.asset(
-                                AppVectors.sun,
-                                fit: BoxFit.none,
+                            child: GestureDetector(
+                              child: Container(
+                                height: 60,
+                                width: 60,
+                                decoration: BoxDecoration(
+                                  color: Color(0xff30393C).withOpacity(0.5),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: SvgPicture.asset(
+                                  AppVectors.sun,
+                                  fit: BoxFit.none,
+                                ),
                               ),
                             ),
                           ),
@@ -108,16 +110,18 @@ class ChooseMode extends StatelessWidget {
                           child: BackdropFilter(
                             filter:
                                 ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
-                            child: Container(
-                              height: 60,
-                              width: 60,
-                              decoration: BoxDecoration(
-                                color: Color(0xff30393C).withOpacity(0.5),
-                                shape: BoxShape.circle,
-                              ),
-                              child: SvgPicture.asset(
-                                AppVectors.moon,
-                                fit: BoxFit.none,
+                            child: GestureDetector(
+                              child: Container(
+                                height: 60,
+                                width: 60,
+                                decoration: BoxDecoration(
+                                  color: Color(0xff30393C).withOpacity(0.5),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: SvgPicture.asset(
+                                  AppVectors.moon,
+                                  fit: BoxFit.none,
+                                ),
                               ),
                             ),
                           ),

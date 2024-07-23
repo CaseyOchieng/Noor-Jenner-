@@ -79,8 +79,8 @@ class ChooseMode extends StatelessWidget {
                                     .updateTheme(ThemeMode.light);
                               },
                               child: Container(
-                                height: 60,
-                                width: 60,
+                                height: 50,
+                                width: 50,
                                 decoration: BoxDecoration(
                                   color: Color(0xff30393C).withOpacity(0.5),
                                   shape: BoxShape.circle,
@@ -124,8 +124,8 @@ class ChooseMode extends StatelessWidget {
                                     .updateTheme(ThemeMode.dark);
                               },
                               child: Container(
-                                height: 60,
-                                width: 60,
+                                height: 50,
+                                width: 50,
                                 decoration: BoxDecoration(
                                   color: Color(0xff30393C).withOpacity(0.5),
                                   shape: BoxShape.circle,

@@ -51,7 +51,7 @@ class GetStartedPage extends StatelessWidget {
                   'Enjoy listening to music',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 18,
+                    fontSize: 14,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

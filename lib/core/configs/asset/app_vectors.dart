@@ -6,4 +6,6 @@ class AppVectors {
   static const String noorJennerLogo = '${basePath}noor_jenner_logo.png';
   static const String sun = '${basePath}sun$format';
   static const String moon = '${basePath}moon$format';
+  static const String topPattern = '/asset/vectors/topPattern.png';
+  static const String downPattern = '/asset/vectors/downPattern.png';
 }

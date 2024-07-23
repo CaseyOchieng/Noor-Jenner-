@@ -1,5 +1,5 @@
 name: noorjenner
-description: "Noor Jenner App"
+description: "Noor Jenner -Music application for flutter"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
@@ -67,6 +67,9 @@ flutter:
     - asset/images/
     - asset/fonts/
     - asset/vectors/
+    - asset/images/topPattern.png
+    - asset/images/downPattern .png
+    - asset/images/auth_bg.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

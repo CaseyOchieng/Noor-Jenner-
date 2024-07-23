@@ -62,7 +62,7 @@ class GetStartedPage extends StatelessWidget {
                   'Enjoy uninterrupted music with Noor Jenner. No ads, just pure listening pleasure.',
                   style: TextStyle(
                     color: AppColors.grey,
-                    fontSize: 13,
+                    fontSize: 12,
                     fontWeight: FontWeight.w400,
                   ),
                   textAlign: TextAlign.center,

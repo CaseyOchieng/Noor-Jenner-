@@ -37,8 +37,8 @@ class SignupOrSignin extends StatelessWidget {
                     const Text(
                       'Enjoy Listening To Music',
                       style: TextStyle(
+                        fontSize: 15.5,
                         fontWeight: FontWeight.bold,
-                        fontSize: 19,
                         color: Colors.black,
                       ),
                     ),

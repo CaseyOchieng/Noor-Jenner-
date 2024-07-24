@@ -36,14 +36,17 @@ class SignupOrSignin extends StatelessWidget {
                     ),
                     const Text(
                       'Enjoy Listening To Music',
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Colors.black,
+                      ),
                     ),
                     const SizedBox(
                       height: 21,
                     ),
                     const Text(
-                      'Noor jenner is a proprietary music streaming and media services provider ',
+                      'Noor jenner is a proprietary music streaming and media services provider',
                       style: TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 13,

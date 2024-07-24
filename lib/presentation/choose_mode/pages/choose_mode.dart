@@ -18,6 +18,7 @@ class ChooseMode extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
+          //The appbar
           //The container to make the background
           Container(
             padding: EdgeInsets.symmetric(

@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:noorjenner/common/helper/is_dark_mode.dart';
 import 'package:noorjenner/common/widgets/button/basic_app_button.dart';
 import 'package:noorjenner/core/configs/theme/app_colors.dart';
+import 'package:noorjenner/presentation/auth/pages/signup.dart';
 
 class SignupOrSignin extends StatelessWidget {
   const SignupOrSignin({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,7 +43,7 @@ class SignupOrSignin extends StatelessWidget {
                       height: 21,
                     ),
                     const Text(
-                      'Noor jenner is a proprietary Swedish audio streaming and media services provider ',
+                      'Noor jenner is a proprietary music streaming and media services provider ',
                       style: TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 13,
@@ -60,13 +59,13 @@ class SignupOrSignin extends StatelessWidget {
                           flex: 1,
                           child: BasicAppButton(
                             onPressed: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //     builder: (BuildContext context) =>
-                              //         SignupPage(),
-                              //   ),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      SignupPage(),
+                                ),
+                              );
                             },
                             title: 'Register',
                             height: null,
@@ -90,11 +89,10 @@ class SignupOrSignin extends StatelessWidget {
                               child: Text(
                                 'Sign in',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16,
-                                    color: context.isDarkMode
-                                        ? Colors.white
-                                        : Colors.black),
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                  color: Colors.black,
+                                ),
                               )),
                         )
                       ],

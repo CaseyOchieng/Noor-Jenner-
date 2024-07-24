@@ -14,7 +14,7 @@ class AppTheme {
       hintStyle: TextStyle(
         color: Color(0xffA7A7A7),
         fontSize: 13,
-        fontWeight: FontWeight.bold,
+        fontWeight: FontWeight.w500,
       ),
       contentPadding: EdgeInsets.all(15),
       border: OutlineInputBorder(
@@ -58,7 +58,7 @@ class AppTheme {
       hintStyle: TextStyle(
         color: Color(0xff383838),
         fontSize: 13,
-        fontWeight: FontWeight.bold,
+        fontWeight: FontWeight.w500,
       ),
       contentPadding: EdgeInsets.all(15),
       border: OutlineInputBorder(

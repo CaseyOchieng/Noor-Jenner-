@@ -38,7 +38,7 @@ class SignupOrSignin extends StatelessWidget {
                       'Enjoy Listening To Music',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 20,
+                        fontSize: 19,
                         color: Colors.black,
                       ),
                     ),
@@ -80,24 +80,25 @@ class SignupOrSignin extends StatelessWidget {
                         Expanded(
                           flex: 1,
                           child: TextButton(
-                              onPressed: () {
-                                // Navigator.push(
-                                //   context,
-                                //   MaterialPageRoute(
-                                //     builder: (BuildContext context) =>
-                                //         SigninPage(),
-                                //   ),
-                                // );
-                              },
-                              child: Text(
-                                'Sign in',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                  color: Colors.black,
-                                ),
-                              )),
-                        )
+                            onPressed: () {
+                              // Navigator.push(
+                              //   context,
+                              //   MaterialPageRoute(
+                              //     builder: (BuildContext context) =>
+                              //         SigninPage(),
+                              //   ),
+                              // );
+                            },
+                            child: Text(
+                              'Sign in',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                        ),
                       ],
                     )
                   ],
